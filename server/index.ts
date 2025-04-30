@@ -57,13 +57,18 @@ app.use((req, res, next) => {
   }
 
   // Get port from environment variable or use default
-  const port = process.env.PORT || 5000;
+  const port = process.env.PORT ? parseInt(process.env.PORT) : 5000;
   
-  // For local development, use localhost instead of 0.0.0.0 which has issues on Windows
-  const host = process.env.NODE_ENV === 'production' ? "0.0.0.0" : "localhost";
-  
-  // Remove reusePort option as it's not supported in all environments
-  server.listen(port, host, () => {
-    log(`serving on ${host}:${port}`);
-  });
+  // Use environment appropriate configuration
+  if (process.env.NODE_ENV === 'production') {
+    // In production (Vercel), just use the port
+    server.listen(port, () => {
+      log(`serving on port ${port}`);
+    });
+  } else {
+    // For local development on Windows, specify localhost
+    server.listen(port, 'localhost', () => {
+      log(`serving on localhost:${port}`);
+    });
+  }
 })();
