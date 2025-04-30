@@ -17,15 +17,15 @@ const MenuBar: React.FC = () => {
         </div>
         
         <div className="flex space-x-4">
-          <Link to="/">
-            <a className={`px-3 py-2 rounded-md font-medium hover:bg-primary-deep transition-colors duration-150 ease-in-out ${location === '/' ? 'bg-primary-deep' : ''}`}>
+          <Link href="/">
+            <span className={`px-3 py-2 rounded-md font-medium hover:bg-primary-deep transition-colors duration-150 ease-in-out cursor-pointer ${location === '/' ? 'bg-primary-deep' : ''}`}>
               Home
-            </a>
+            </span>
           </Link>
-          <Link to="/themes">
-            <a className={`px-3 py-2 rounded-md font-medium hover:bg-primary-deep transition-colors duration-150 ease-in-out ${location === '/themes' ? 'bg-primary-deep' : ''}`}>
+          <Link href="/themes">
+            <span className={`px-3 py-2 rounded-md font-medium hover:bg-primary-deep transition-colors duration-150 ease-in-out cursor-pointer ${location === '/themes' ? 'bg-primary-deep' : ''}`}>
               Themes
-            </a>
+            </span>
           </Link>
         </div>
       </div>
