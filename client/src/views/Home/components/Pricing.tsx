@@ -94,7 +94,7 @@ const Pricing: React.FC = () => {
               <h3 className="text-xl font-bold mb-2 text-foreground">{tier.name}</h3>
               <div className="flex items-baseline mb-4">
                 <span className="text-4xl font-bold text-foreground">{tier.price}</span>
-                <span className="text-muted-foreground ml-1">/month</span>
+                <span className="text-muted-foreground dark:text-gray-400 ml-1">/month</span>
               </div>
               <p className="text-muted-foreground dark:text-gray-300 mb-6">
                 {tier.description}

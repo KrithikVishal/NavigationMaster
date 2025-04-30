@@ -49,7 +49,7 @@ const FAQ: React.FC = () => {
           <h2 className="text-3xl font-bold text-foreground mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto">
             Have questions? We're here to help.
           </p>
         </div>
@@ -61,7 +61,7 @@ const FAQ: React.FC = () => {
                 <AccordionTrigger className="text-left font-medium text-lg text-foreground">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground dark:text-gray-300">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
