@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import './assets/styles/themes.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 215 25% 27%;
+  --muted: 210 20% 96%;
+  --muted-foreground: 215 25% 40%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 215 25% 27%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 25% 27%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --primary: 212 96% 54%;
+  --primary-foreground: 0 0% 100%;
+  --primary-deep: 220 100% 40%;
+  --primary-mild: 210 100% 92%;
+  --secondary: 215 14% 34%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 327 73% 64%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 212 96% 54%;
+  --radius: 0.5rem;
+  
+  /* Chart colors */
+  --chart-1: var(--primary);
+  --chart-2: 329 76% 70%;
+  --chart-3: 48 96% 53%;
+  --chart-4: 157 76% 40%;
+  --chart-5: 267 83% 60%;
+  
+  /* Sidebar colors */
+  --sidebar-background: 215 25% 27%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-primary: 210 100% 92%;
+  --sidebar-primary-foreground: 215 25% 27%;
+  --sidebar-accent: 327 73% 64%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 215 25% 22%;
+  --sidebar-ring: 210 100% 92%;
+}
+
+.dark {
+  --background: 215 28% 9%;
+  --foreground: 210 15% 92%;
+  --muted: 215 25% 15%;
+  --muted-foreground: 210 15% 70%;
+  --popover: 215 28% 9%;
+  --popover-foreground: 210 15% 92%;
+  --card: 215 28% 9%;
+  --card-foreground: 210 15% 92%;
+  --border: 215 25% 15%;
+  --input: 215 25% 15%;
+  --primary: 212 96% 54%;
+  --primary-foreground: 0 0% 100%;
+  --primary-deep: 220 100% 40%;
+  --primary-mild: 210 30% 20%;
+  --secondary: 215 14% 34%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 327 73% 64%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 212 96% 54%;
+  
+  /* Chart colors - dark mode */
+  --chart-1: var(--primary);
+  --chart-2: 329 76% 70%;
+  --chart-3: 48 96% 53%;
+  --chart-4: 157 76% 40%;
+  --chart-5: 267 83% 60%;
+  
+  /* Sidebar colors - dark mode */
+  --sidebar-background: 217 33% 17%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-primary: 210 100% 92%;
+  --sidebar-primary-foreground: 215 25% 27%;
+  --sidebar-accent: 327 73% 64%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 217 33% 25%;
+  --sidebar-ring: 210 100% 92%;
+}
+
+/* Theme: Organ Transplant */
+.theme-organ-transplant {
+  --background: 210 40% 98%;
+  --foreground: 215 30% 18%;
+  --muted: 160 50% 96%;
+  --muted-foreground: 215 25% 40%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 215 30% 18%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 30% 18%;
+  --border: 160 10% 90%;
+  --input: 160 10% 90%;
+  --primary: 160 84% 39%;
+  --primary-foreground: 0 0% 100%;
+  --primary-deep: 162 47% 20%;
+  --primary-mild: 160 84% 89%;
+  --secondary: 220 14% 35%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 190 90% 37%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 160 84% 39%;
+  
+  /* Chart colors */
+  --chart-1: var(--primary);
+  --chart-2: 190 90% 37%;
+  --chart-3: 40 96% 53%;
+  --chart-4: 210 96% 54%;
+  --chart-5: 260 83% 60%;
+}
+
+/* Theme: Cosmetic Surgery */
+.theme-cosmetic-surgery {
+  --background: 270 100% 98%;
+  --foreground: 234 45% 20%;
+  --muted: 270 50% 95%;
+  --muted-foreground: 234 25% 40%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 234 45% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 234 45% 20%;
+  --border: 270 10% 90%;
+  --input: 270 10% 90%;
+  --primary: 263 85% 58%;
+  --primary-foreground: 0 0% 100%;
+  --primary-deep: 266 83% 42%;
+  --primary-mild: 264 100% 96%;
+  --secondary: 220 14% 35%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 335 78% 44%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 263 85% 58%;
+  
+  /* Chart colors */
+  --chart-1: var(--primary);
+  --chart-2: 335 78% 44%;
+  --chart-3: 40 96% 53%;
+  --chart-4: 170 76% 40%;
+  --chart-5: 210 96% 54%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}

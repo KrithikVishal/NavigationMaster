@@ -1,0 +1,67 @@
+/* Base Theme Variables (Default) */
+:root {
+  --primary: 37 99% 65%;
+  --primary-deep: 34 100% 50%;
+  --primary-mild: 48 96% 89%;
+  --secondary: 220 14% 35%;
+  --accent: 327 73% 64%;
+  --background: 210 20% 98%;
+  --card: 0 0% 100%;
+  --text: 215 25% 17%;
+  --text-secondary: 220 9% 46%;
+  --border: 214 32% 91%;
+  --heading-font: 'Inter', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* Theme: Organ Transplant */
+.theme-organ-transplant {
+  --primary: 160 84% 39%;
+  --primary-deep: 162 47% 20%;
+  --primary-mild: 160 84% 89%;
+  --secondary: 220 14% 35%;
+  --accent: 190 90% 37%;
+  --background: 210 40% 98%;
+  --card: 0 0% 100%;
+  --text: 215 30% 18%;
+  --text-secondary: 213 22% 47%;
+  --border: 214 32% 91%;
+  --heading-font: 'Inter', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* Theme: Cosmetic Surgery */
+.theme-cosmetic-surgery {
+  --primary: 263 85% 58%;
+  --primary-deep: 266 83% 42%;
+  --primary-mild: 264 100% 96%;
+  --secondary: 220 14% 35%;
+  --accent: 335 78% 44%;
+  --background: 270 100% 98%;
+  --card: 0 0% 100%;
+  --text: 234 45% 20%;
+  --text-secondary: 220 9% 46%;
+  --border: 214 32% 91%;
+  --heading-font: 'Inter', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: hsl(var(--background));
+  color: hsl(var(--text));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+/* Theme Preview Animation */
+.theme-preview {
+  transition: all 0.3s ease;
+}
+
+.theme-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
