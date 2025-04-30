@@ -64,7 +64,7 @@ const Testimonials: React.FC = () => {
           <h2 className="text-3xl font-bold text-foreground mb-4">
             Trusted by thousands of organizations
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto">
             Here's what our customers have to say about our platform and services.
           </p>
         </div>
@@ -88,7 +88,7 @@ const Testimonials: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">{testimonial.author}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonial.position}, {testimonial.company}</p>
+                  <p className="text-sm text-muted-foreground dark:text-gray-400">{testimonial.position}, {testimonial.company}</p>
                 </div>
               </div>
             </div>

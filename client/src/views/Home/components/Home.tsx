@@ -200,7 +200,7 @@ const Home: React.FC = () => {
       <section className="py-16 bg-primary/10 dark:bg-primary/5">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-foreground mb-4">Ready to transform your workflow?</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto mb-8">
             Join thousands of teams that are already experiencing increased productivity and streamlined operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

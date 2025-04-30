@@ -73,7 +73,7 @@ const Pricing: React.FC = () => {
           <h2 className="text-3xl font-bold text-foreground mb-4">
             Simple, Transparent Pricing
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto">
             Choose the plan that's right for your team. All plans include a 14-day free trial.
           </p>
         </div>
@@ -96,7 +96,7 @@ const Pricing: React.FC = () => {
                 <span className="text-4xl font-bold text-foreground">{tier.price}</span>
                 <span className="text-muted-foreground ml-1">/month</span>
               </div>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground dark:text-gray-300 mb-6">
                 {tier.description}
               </p>
               <div className="mb-8">

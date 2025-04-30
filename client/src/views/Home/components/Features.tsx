@@ -58,7 +58,7 @@ const Features: React.FC = () => {
           <h2 className="text-3xl font-bold text-foreground mb-4">
             Powerful Features
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto">
             Discover all the ways our platform can help transform your workflow.
           </p>
         </div>
@@ -70,7 +70,7 @@ const Features: React.FC = () => {
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2 text-foreground">{feature.title}</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground dark:text-gray-300">
                 {feature.description}
               </p>
             </div>
