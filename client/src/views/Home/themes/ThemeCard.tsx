@@ -1,6 +1,7 @@
 import React from 'react';
 import { useThemeStore } from '@/store/themeStore';
 import { ThemeDescription } from '@/@types/theme';
+import { getThemeIcon } from '@/components/shared/ThemeIcons';
 
 interface ThemeCardProps {
   theme: ThemeDescription;
@@ -22,7 +23,7 @@ const ThemeCard: React.FC<ThemeCardProps> = ({ theme }) => {
       <div className="h-36 bg-primary flex items-center justify-center">
         <div className="text-white text-center">
           <div className="flex justify-center">
-            {theme.icon}
+            {getThemeIcon(theme.id)}
           </div>
           <span className="font-medium mt-2 block">{theme.tagline}</span>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useThemeStore } from '@/store/themeStore';
 import { heroContent } from '@/configs/theme.config';
 import { Button } from '@/components/ui/button';
+import { getHeroIcon } from '@/components/shared/ThemeIcons';
 
 const Hero: React.FC = () => {
   const { specialty } = useThemeStore();
@@ -27,7 +28,7 @@ const Hero: React.FC = () => {
             <div className="md:w-1/2">
               <div className="rounded-lg bg-white p-4 shadow-md">
                 <div className="h-48 bg-gray-100 rounded flex items-center justify-center">
-                  {content.icon}
+                  {getHeroIcon(specialty)}
                 </div>
               </div>
             </div>
