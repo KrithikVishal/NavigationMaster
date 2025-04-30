@@ -7,6 +7,7 @@ import Features from './Features';
 import Testimonials from './Testimonials';
 import Pricing from './Pricing';
 import FAQ from './FAQ';
+import TrustedCompanies from './TrustedCompanies';
 
 const Home: React.FC = () => {
   const { specialty } = useThemeStore();
@@ -127,6 +128,9 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      
+      {/* Trusted Companies */}
+      <TrustedCompanies />
       
       {/* Features Section */}
       <Features />
