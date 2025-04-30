@@ -58,7 +58,7 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white" id="testimonials">
+    <section className="py-20 bg-white dark:bg-gray-950" id="testimonials">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -71,7 +71,7 @@ const Testimonials: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-background rounded-lg p-6 shadow-sm border border-border">
+            <div key={index} className="bg-background dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-border dark:border-gray-800">
               <div className="flex text-yellow-400 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -83,11 +83,11 @@ const Testimonials: React.FC = () => {
                 "{testimonial.quote}"
               </p>
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-primary/20 mr-3 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-primary/20 dark:bg-primary/10 mr-3 flex items-center justify-center">
                   <span className="text-primary font-semibold">{testimonial.initials}</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">{testimonial.author}</h4>
+                  <h4 className="font-semibold text-foreground">{testimonial.author}</h4>
                   <p className="text-sm text-muted-foreground">{testimonial.position}, {testimonial.company}</p>
                 </div>
               </div>

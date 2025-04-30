@@ -67,7 +67,7 @@ const Pricing: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30" id="pricing">
+    <section className="py-20 bg-muted/30 dark:bg-gray-900/50" id="pricing">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -82,18 +82,18 @@ const Pricing: React.FC = () => {
           {pricingTiers.map((tier, index) => (
             <div 
               key={index} 
-              className={`bg-background rounded-lg p-8 border ${tier.popular 
+              className={`bg-background dark:bg-gray-800 rounded-lg p-8 border ${tier.popular 
                 ? 'border-primary shadow-lg relative' 
-                : 'border-border shadow-sm'}`}
+                : 'border-border dark:border-gray-700 shadow-sm'}`}
             >
               {tier.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white text-sm px-4 py-1 rounded-full font-medium">
                   Most Popular
                 </div>
               )}
-              <h3 className="text-xl font-bold mb-2">{tier.name}</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{tier.name}</h3>
               <div className="flex items-baseline mb-4">
-                <span className="text-4xl font-bold">{tier.price}</span>
+                <span className="text-4xl font-bold text-foreground">{tier.price}</span>
                 <span className="text-muted-foreground ml-1">/month</span>
               </div>
               <p className="text-muted-foreground mb-6">
@@ -103,7 +103,7 @@ const Pricing: React.FC = () => {
                 {tier.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center mb-3">
                     <Check size={18} className="text-primary mr-2 flex-shrink-0" />
-                    <span className="text-sm">{feature}</span>
+                    <span className="text-sm text-foreground">{feature}</span>
                   </div>
                 ))}
               </div>
