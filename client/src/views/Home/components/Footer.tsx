@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-secondary text-white py-8 mt-16">
+    <footer className="bg-secondary dark:bg-gray-900 text-white py-8 mt-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-6 md:mb-0">
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-6 border-t border-gray-700 flex flex-col-reverse md:flex-row justify-between items-center">
+        <div className="mt-8 pt-6 border-t border-gray-700 dark:border-gray-800 flex flex-col-reverse md:flex-row justify-between items-center">
           <div className="mt-4 md:mt-0 text-sm opacity-75">
             © {new Date().getFullYear()} GoGetWell.ai. All rights reserved.
           </div>

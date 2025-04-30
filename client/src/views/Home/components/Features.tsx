@@ -52,7 +52,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white" id="features">
+    <section className="py-20 bg-white dark:bg-gray-950" id="features">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-foreground mb-4">
@@ -66,10 +66,10 @@ const Features: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-start">
-              <div className="mb-4 p-3 bg-primary/10 rounded-lg">
+              <div className="mb-4 p-3 bg-primary/10 dark:bg-primary/5 rounded-lg">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">{feature.title}</h3>
               <p className="text-muted-foreground">
                 {feature.description}
               </p>
