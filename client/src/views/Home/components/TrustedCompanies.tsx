@@ -67,7 +67,7 @@ const TrustedCompanies: React.FC = () => {
     <section className="py-10 bg-muted/20 dark:bg-gray-900/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h3 className="text-lg font-medium text-muted-foreground">
+          <h3 className="text-lg font-medium text-muted-foreground dark:text-gray-300">
             Trusted by leading companies worldwide
           </h3>
         </div>

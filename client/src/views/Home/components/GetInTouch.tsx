@@ -34,18 +34,18 @@ const GetInTouch: React.FC = () => {
                   <Input id="name" placeholder="Your name" />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">Email</label>
+                  <label htmlFor="email" className="text-sm font-medium dark:text-gray-200">Email</label>
                   <Input id="email" type="email" placeholder="Your email" />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-medium">Subject</label>
+                <label htmlFor="subject" className="text-sm font-medium dark:text-gray-200">Subject</label>
                 <Input id="subject" placeholder="How can we help you?" />
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">Message</label>
+                <label htmlFor="message" className="text-sm font-medium dark:text-gray-200">Message</label>
                 <Textarea id="message" placeholder="Your message" rows={5} />
               </div>
               
