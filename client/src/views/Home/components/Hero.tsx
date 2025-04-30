@@ -11,11 +11,11 @@ const Hero: React.FC = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <div className="p-6 bg-primary-mild rounded-lg">
+        <div className="p-6 bg-primary-mild dark:bg-gray-800 rounded-lg">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-6 md:mb-0 md:pr-8">
               <h1 className="text-3xl font-bold text-foreground mb-4">{content.title}</h1>
-              <p className="text-muted-foreground mb-6">{content.description}</p>
+              <p className="text-muted-foreground dark:text-gray-300 mb-6">{content.description}</p>
               <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
                 <Button variant="default" size="lg" className="bg-primary text-white font-medium rounded-md hover:bg-primary-deep transition">
                   {content.primaryButton}
@@ -26,8 +26,8 @@ const Hero: React.FC = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <div className="rounded-lg bg-white p-4 shadow-md">
-                <div className="h-48 bg-gray-100 rounded flex items-center justify-center">
+              <div className="rounded-lg bg-white dark:bg-gray-700 p-4 shadow-md">
+                <div className="h-48 bg-gray-100 dark:bg-gray-800 rounded flex items-center justify-center">
                   {getHeroIcon(specialty)}
                 </div>
               </div>

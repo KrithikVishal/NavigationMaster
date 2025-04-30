@@ -9,11 +9,11 @@ const GetInTouch: React.FC = () => {
   const { specialty } = useThemeStore();
   
   return (
-    <section className="py-12 bg-muted">
+    <section className="py-12 bg-muted dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground dark:text-gray-300">
             {specialty === 'organ-transplant' 
               ? 'Have questions about our organ transplant AI solutions? Contact our specialized team.'
               : specialty === 'cosmetic-surgery'
@@ -30,7 +30,7 @@ const GetInTouch: React.FC = () => {
             <form className="space-y-4">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">Name</label>
+                  <label htmlFor="name" className="text-sm font-medium dark:text-gray-200">Name</label>
                   <Input id="name" placeholder="Your name" />
                 </div>
                 <div className="space-y-2">
