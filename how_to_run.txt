@@ -1,0 +1,7 @@
+Complete Setup Steps for Running Locally
+First, install all dependencies:
+
+npm install
+Then try running the application:
+
+$env:NODE_ENV = "development"; npx tsx server/index.ts
