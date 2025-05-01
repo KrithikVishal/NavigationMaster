@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "server/index.ts", "use": "@vercel/node" },
-    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "client/dist" } }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/(.*)", "destination": "/" }
   ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "server/index.ts" },
-    { "src": "/(.*)", "dest": "client/dist/$1" }
-  ],
+  "functions": {
+    "api/index.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "installCommand": "npm install"
 }
